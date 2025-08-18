@@ -28,13 +28,6 @@ bool Database::connectToDatabase() {
         return false;
     }
 
-//     QSqlQuery query;
-//     query.exec(
-//         "CREATE TABLE IF NOT EXISTS orderedLists ("
-// "id TEXT PRIMARY KEY,"
-// "name TEXT NOT NULL,"
-// ""))
-
     qDebug() << "데이터베이스 연결 성공!";
     return true;
 }

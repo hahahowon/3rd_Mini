@@ -1,3 +1,5 @@
+// adminproductform.h
+
 #ifndef ADMINPRODUCTFORM_H
 #define ADMINPRODUCTFORM_H
 
@@ -13,6 +15,9 @@ class AdminProductForm : public QWidget {
 public:
     explicit AdminProductForm(QWidget *parent = nullptr);
     ~AdminProductForm();
+
+private slots:
+    void on_toolBox_currentChanged(int index);
 
 private:
     Ui::AdminProductForm *ui;
